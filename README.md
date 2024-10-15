@@ -20,10 +20,16 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"github.com/MarcKVR/greetings"
 )
 
 func main() {
-    message, err := greetings.Hello("Esteban")
+	message, err := greetings.Hello("Juan Pablo")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(message)
 }
 ```
